@@ -3,13 +3,12 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,html}"],
   theme: {
     screens: {
-      xs: "360px",
-      sm: "640px",
+      xs: "320px",
+      sm: "576px",
       md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
-      "3xl": "1760px",
+      lg: "992px",
+      xl: "1200px",
+      "2xl": "1400px",
     },
     extend: {
       fontFamily: {
@@ -18,8 +17,10 @@ module.exports = {
       },
       colors: {
         primary: "#BE3887",
+        "primary-blue": "#3983C5",
         "secondary-dark": "#3983C5",
         "secondary-light": "#559FD6",
+        "primary-blue-ed": "#15ade5",
       },
     },
   },

@@ -1,2 +1,2 @@
-# YA
-### Portfolio for Young Architects
+# Young Architects Portfolio
+

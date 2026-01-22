@@ -1,20 +1,17 @@
-import { useEffect } from "react";
-import Home from "./page/Home";
+import React from "react";
+import { Outlet } from "react-router-dom";
+import { Header, Footer } from "./components";
+import { RootProvider } from "./contexts/RootContext";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
-function App() {
-  useEffect(() => {
-    const navigation = document.querySelector(".navbar");
-
-    if (navigation) {
-      const navigationHeight = navigation.offsetHeight;
-      document.documentElement.style.setProperty(
-        "--scroll-padding",
-        navigationHeight + "px"
-      );
-    }
-  });
-
-  return <Home />;
-}
+const App = (props) => {
+  return (
+    <RootProvider>
+      <Header />
+      <Outlet />
+      <Footer />
+    </RootProvider>
+  );
+};
 
 export default App;
